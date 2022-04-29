@@ -116,3 +116,16 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+
+// Change the masthead background image over time
+
+var images = ['../dist/assets/img/taiwan.jpg', '../dist/assets/img/skiing2.jpg', '../dist/assets/img/skiing.jpg'];
+var i = 0;
+var change = setInterval(function() {
+    if (i == 2) {
+        i = 0;
+    } else {
+        document.getElementById("masthead").style.backgroundImage = "url(" + images[i] + ")";
+        i++;
+    }
+}, 10000);
