@@ -119,13 +119,13 @@ window.onload = function() {
 
 // Change the masthead background image over time
 
-var images = ['../dist/assets/img/taiwan.jpg', '../dist/assets/img/skiing2.jpg', '../dist/assets/img/skiing.jpg'];
+var images = ['../dist/assets/img/taiwan.jpg', '../dist/assets/img/skiing2.jpg', '../dist/assets/img/trail.JPG', '../dist/assets/img/skiing.jpg'];
 var i = 0;
 var change = setInterval(function() {
-    if (i == 2) {
+    if (i == images.length) {
         i = 0;
-    } else {
-        document.getElementById("masthead").style.backgroundImage = "url(" + images[i] + ")";
-        i++;
     }
+    document.getElementById("masthead").style.backgroundImage = "linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(" + images[i] + ")";
+    i++;
+
 }, 10000);
