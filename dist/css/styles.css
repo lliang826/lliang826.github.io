@@ -11291,6 +11291,7 @@ textarea.form-control-lg {
 html {
   height: 100%;
   scroll-padding-top: calc(4.5rem - 1px);
+  scroll-behavior: smooth !important;
 }
 
 body {
@@ -11299,7 +11300,7 @@ body {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 3rem 0;
 }
 
 .text-white-75 {

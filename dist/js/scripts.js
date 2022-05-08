@@ -58,8 +58,16 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-// Typewriter effect (Source: https://css-tricks.com/snippets/css/typewriter-effect/)
+// var cstBuddy = document.getElementById("cstbuddy");
+// cstBuddy.addEventListener("click", function() {
+//     SimpleLightbox.open({
+//         content: '<div><h3>Title</h3><p>Lorem ipsum</p></div>',
+//         elementClass: 'slbContentEl',
+//     });
+// });
 
+
+// Typewriter effect (Source: https://css-tricks.com/snippets/css/typewriter-effect/)
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -118,7 +126,6 @@ window.onload = function() {
 };
 
 // Change the masthead background image over time
-
 var images = ['../dist/assets/img/taiwan.jpg', '../dist/assets/img/skiing2.jpg', '../dist/assets/img/trail.JPG', '../dist/assets/img/skiing.jpg'];
 var i = 0;
 var change = setInterval(function() {
