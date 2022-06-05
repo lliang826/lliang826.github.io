@@ -165,7 +165,7 @@ window.onload = function() {
 // Change the masthead background image over time
 var images = ['../assets/img/taiwan.jpg', 
               '../assets/img/skiing2.jpg', 
-              '../assets/img/trail.JPG', 
+              '../assets/img/trail.jpg', 
               '../assets/img/skiing.jpg'];
 
 // Preloads the images so there is no delay
