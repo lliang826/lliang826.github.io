@@ -167,14 +167,22 @@ var images = ['../assets/img/taiwan.jpg',
               '../assets/img/skiing2.jpg', 
               '../assets/img/trail.JPG', 
               '../assets/img/skiing.jpg'];
+
+// Preloads the images so there is no delay
+var preloadedImages = [];
+for (let i = 0; i < images.length; i++) {
+    preloadedImages[i] = new Image();
+    preloadedImages[i].src = images[i];
+}
+
 var i = 0;
 var change = setInterval(function() {
-    if (i == images.length) {
+    if (i == preloadedImages.length) {
         i = 0;
     }
     document.getElementById("masthead").style.backgroundImage = 
         "linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, "
-        + "rgba(92, 77, 66, 0.8) 100%), url(" + images[i] + ")";
+        + "rgba(92, 77, 66, 0.8) 100%), url(" + preloadedImages[i].src + ")";
     i++;
 
 }, 5000);
