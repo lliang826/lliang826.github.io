@@ -69,7 +69,8 @@ cstBuddy.addEventListener("click", function() {
             + '<img class="img-fluid" src="assets/img/CSTBuddyHome.PNG" alt="..." />'
             + '<img class="img-fluid" src="assets/img/Chatbot.PNG" alt="..." id="chatbotHome"/>'
             + '<p class="projectLinks"><a href="https://github.com/lliang826/CSTBuddy" target="_blank">Github repo</a></p>'
-            + '<p class="projectLinks"><br><a href="https://comp1800-349e8.web.app/" target="blank">Link to app</a></p></div>',
+            + '<p class="projectLinks"><br><a href="https://comp1800-349e8.web.app/" target="blank">Link to app</a>'
+            + '<br><br>To sign in, use \"test3@gmail.com\" for the email and password.</p></div>',
         elementClass: 'slbContentEl',
     });
 });
@@ -162,13 +163,18 @@ window.onload = function() {
 };
 
 // Change the masthead background image over time
-var images = ['../assets/img/taiwan.jpg', '../assets/img/skiing2.jpg', '../assets/img/trail.JPG', '../assets/img/skiing.jpg'];
+var images = ['../assets/img/taiwan.jpg', 
+              '../assets/img/skiing2.jpg', 
+              '../assets/img/trail.JPG', 
+              '../assets/img/skiing.jpg'];
 var i = 0;
 var change = setInterval(function() {
     if (i == images.length) {
         i = 0;
     }
-    document.getElementById("masthead").style.backgroundImage = "linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(" + images[i] + ")";
+    document.getElementById("masthead").style.backgroundImage = 
+        "linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, "
+        + "rgba(92, 77, 66, 0.8) 100%), url(" + images[i] + ")";
     i++;
 
-}, 10000);
+}, 5000);
