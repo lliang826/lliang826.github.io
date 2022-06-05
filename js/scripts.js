@@ -162,7 +162,7 @@ window.onload = function() {
 };
 
 // Change the masthead background image over time
-var images = ['../dist/assets/img/taiwan.jpg', '../dist/assets/img/skiing2.jpg', '../dist/assets/img/trail.JPG', '../dist/assets/img/skiing.jpg'];
+var images = ['../assets/img/taiwan.jpg', '../assets/img/skiing2.jpg', '../assets/img/trail.JPG', '../assets/img/skiing.jpg'];
 var i = 0;
 var change = setInterval(function() {
     if (i == images.length) {
