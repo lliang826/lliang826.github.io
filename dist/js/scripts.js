@@ -51,21 +51,57 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
-    // Activate SimpleLightbox plugin for portfolio items
-    new SimpleLightbox({
-        elements: '#portfolio a.portfolio-box'
-    });
+    // Activate SimpleLightbox plugin for all portfolio items
+    // new SimpleLightbox({
+    //     elements: '#portfolio a.portfolio-box'
+    // });
 
 });
 
-// var cstBuddy = document.getElementById("cstbuddy");
-// cstBuddy.addEventListener("click", function() {
-//     SimpleLightbox.open({
-//         content: '<div><h3>Title</h3><p>Lorem ipsum</p></div>',
-//         elementClass: 'slbContentEl',
-//     });
-// });
+// Creating SimpleLightbox for each project
+var cstBuddy = document.getElementById("cstbuddy");
+cstBuddy.style.cursor = "pointer";
+cstBuddy.addEventListener("click", function() {
+    SimpleLightbox.open({
+        content: '<div style="width:400px; padding:0.8em"><h3>CST Buddy</h3>' 
+            + '<p>A chatbot web app designed to help BCIT CST students by providing them '
+            + 'with useful information and links about school services.</p>'
+            + '<img class="img-fluid" src="assets/img/CSTBuddyHome.PNG" alt="..." />'
+            + '<img class="img-fluid" src="assets/img/Chatbot.PNG" alt="..." id="chatbotHome"/>'
+            + '<p class="projectLinks"><a href="https://github.com/lliang826/CSTBuddy" target="_blank">Github repo</a></p>'
+            + '<p class="projectLinks"><br><a href="https://comp1800-349e8.web.app/" target="blank">Link to app</a></p></div>',
+        elementClass: 'slbContentEl',
+    });
+});
 
+var itemTracker = document.getElementById("itemTracker");
+itemTracker.style.cursor = "pointer";
+itemTracker.addEventListener("click", function() {
+    SimpleLightbox.open({
+        content: '<div style="width:400px; padding:0.8em"><h3>ItemTracker</h3>' 
+        + '<p>A unique to-do list Android mobile app that allows users to create public/private lists and '
+        + 'public/private items. <br><br>\'Public\' means that the list or item is shared with '
+        + 'other users, while \'private\' means that the list or item is kept confidential '
+        + 'and no one but the user can see or access them.</p>'
+        + '<video height="600" id="itemTrackerVideo" autoplay loop muted> '
+        + '<source src="assets/video/ItemTracker.mp4" type="video/mp4" /></video>'
+        + '<p class="projectLinks"><a href="https://github.com/lliang826/ItemTracker" target="_blank">Github repo</a></p>',
+        elementClass: 'slbContentEl',
+    });
+});
+
+var spotUrVibe = document.getElementById("spotUrVibe");
+spotUrVibe.style.cursor = "pointer";
+spotUrVibe.addEventListener("click", function() {
+    SimpleLightbox.open({
+        content: '<div style="width:400px; padding:0.8em"><h3>SpotUrVibe</h3>' 
+        + '<p>A social media web app that allows connects users based on music preferences. '
+        + 'Users can recommend Spotify songs and playlists, and message others within the app.</p>'
+        + '<p class="projectLinks"><a href="https://devpost.com/software/spoturvibe" target="_blank">nwHacks 2021 Devpost</a></p>'
+        + '<p class="projectLinks"><a href="https://github.com/lliang826/SpotUrVibe" target="_blank">Github repo</a></p>',
+        elementClass: 'slbContentEl',
+    });
+});
 
 // Typewriter effect (Source: https://css-tricks.com/snippets/css/typewriter-effect/)
 var TxtType = function(el, toRotate, period) {

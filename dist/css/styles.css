@@ -11475,3 +11475,13 @@ header.masthead h1, header.masthead .h1 {
   text-decoration: none;
   color: white;
 }
+
+#chatbotHome, #itemTrackerVideo {
+  padding: 10% 0% 10%;
+  display: block;
+  margin: 0 auto;
+}
+
+.projectLinks {
+  text-align: center;
+}
