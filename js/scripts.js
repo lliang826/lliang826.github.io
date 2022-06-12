@@ -69,7 +69,7 @@ cstBuddy.addEventListener("click", function() {
             + '<img class="img-fluid" src="assets/img/CSTBuddyHome.PNG" alt="..." />'
             + '<img class="img-fluid" src="assets/img/Chatbot.PNG" alt="..." id="chatbotHome"/>'
             + '<p class="projectLinks"><a href="https://github.com/lliang826/CSTBuddy" target="_blank">Github repo</a></p>'
-            + '<p class="projectLinks"><br><a href="https://comp1800-349e8.web.app/" target="blank">Link to app</a>'
+            + '<p class="projectLinks"><br><a href="https://comp1800-349e8.web.app/" target="blank">Try out the app</a>'
             + '<br><br>To sign in, use \"test3@gmail.com\" for the email and password.</p></div>',
         elementClass: 'slbContentEl',
     });
@@ -86,7 +86,7 @@ itemTracker.addEventListener("click", function() {
         + 'and no one but the user can see or access them.</p>'
         + '<video height="600" id="itemTrackerVideo" autoplay loop muted> '
         + '<source src="assets/video/ItemTracker.mp4" type="video/mp4" /></video>'
-        + '<p class="projectLinks"><a href="https://github.com/lliang826/ItemTracker" target="_blank">Github repo</a></p>',
+        + '<p class="projectLinks"><a href="https://github.com/lliang826/ItemTracker" target="_blank">Github repo</a></p></div>',
         elementClass: 'slbContentEl',
     });
 });
@@ -99,7 +99,7 @@ spotUrVibe.addEventListener("click", function() {
         + '<p>A social media web app that allows connects users based on music preferences. '
         + 'Users can recommend Spotify songs and playlists, and message others within the app.</p>'
         + '<p class="projectLinks"><a href="https://devpost.com/software/spoturvibe" target="_blank">nwHacks 2021 Devpost</a></p>'
-        + '<p class="projectLinks"><a href="https://github.com/lliang826/SpotUrVibe" target="_blank">Github repo</a></p>',
+        + '<p class="projectLinks"><a href="https://github.com/lliang826/SpotUrVibe" target="_blank">Github repo</a></p></div>',
         elementClass: 'slbContentEl',
     });
 });
@@ -181,8 +181,8 @@ var change = setInterval(function() {
         i = 0;
     }
     document.getElementById("masthead").style.backgroundImage = 
-        "linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, "
-        + "rgba(92, 77, 66, 0.8) 100%), url(" + preloadedImages[i].src + ")";
+        "linear-gradient(to bottom, rgba(92, 77, 66, 0.5) 0%, "
+        + "rgba(92, 77, 66, 0.5) 100%), url(" + preloadedImages[i].src + ")";
     i++;
 
 }, 5000);
