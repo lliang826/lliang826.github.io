@@ -11478,10 +11478,17 @@ header.masthead h1, header.masthead .h1 {
 }
 
 #chatbotHome, #itemTrackerVideo {
-  padding: 10% 0% 10%;
   display: block;
-  margin: 0 auto;
+  margin: 10% auto 10%;
 }
+
+#cardifyVideo {
+  display: block;
+  margin: 10% auto 10%;
+  border: solid;
+}
+
+
 
 .projectLinks {
   text-align: center;

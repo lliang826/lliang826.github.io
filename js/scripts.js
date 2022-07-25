@@ -104,6 +104,24 @@ spotUrVibe.addEventListener("click", function() {
     });
 });
 
+var spotUrVibe = document.getElementById("cardify");
+spotUrVibe.style.cursor = "pointer";
+spotUrVibe.addEventListener("click", function() {
+    SimpleLightbox.open({
+        content: '<div style="width:400px; padding:0.8em"><h3>Cardify</h3>' 
+        + '<p>An iOS study application designed for students or anyone else preparing for an exam. <br><br>'
+        + 'Users can create or delete multiple study sets, and within each set, they can create or '
+        + 'delete multiple flashcards. Once all the front-back pairs have been entered, all the '
+        + 'information is displayed with a ScrollView and PageControl inspired by Instagram. <br><br>'
+        + 'In addition, users can lookup definitions for English words in the built-in dictionary '
+        + '(API from <a href="https://dictionaryapi.dev/" target="_blank">https://dictionaryapi.dev/<a/>).</p>'
+        + '<video height="600" id="cardifyVideo" autoplay loop muted> '
+        + '<source src="assets/video/CardifyScreenRecording.mov" type="video/mp4" /></video>'
+        + '<p class="projectLinks"><a href="https://github.com/lliang826/Cardify" target="_blank">Github repo</a></div>',
+        elementClass: 'slbContentEl',
+    });
+});
+
 // Typewriter effect (Source: https://css-tricks.com/snippets/css/typewriter-effect/)
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
