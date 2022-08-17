@@ -96,7 +96,7 @@ spotUrVibe.style.cursor = "pointer";
 spotUrVibe.addEventListener("click", function() {
     SimpleLightbox.open({
         content: '<div style="width:400px; padding:0.8em"><h3>SpotUrVibe</h3>' 
-        + '<p>A social media web app that allows connects users based on music preferences. '
+        + '<p>A social media web app built for nwHacks 2021 that allows connects users based on music preferences. '
         + 'Users can recommend Spotify songs and playlists, and message others within the app.</p>'
         + '<p class="projectLinks"><a href="https://devpost.com/software/spoturvibe" target="_blank">nwHacks 2021 Devpost</a></p>'
         + '<p class="projectLinks"><a href="https://github.com/lliang826/SpotUrVibe" target="_blank">Github repo</a></p></div>',
